@@ -48,7 +48,6 @@ class Ride < ActiveRecord::Base
   end
 
   def take_ride
-    user = self.user
     if user.tickets > self.tickets
       if self.height < user.height
         user.nausea += self.nausea_rating
