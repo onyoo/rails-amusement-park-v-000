@@ -1,0 +1,34 @@
+<%= form_for user do |f| %>
+    <div class="input">
+      <%= f.label "Name: " %>
+      <%= f.text_field :name %>
+    </div>
+
+    <div class="input">
+      <%= f.label "Nausea: " %>
+      <%= f.number_field :nausea %>
+    </div>
+
+    <div class="input">
+      <%= f.label "Happiness: " %>
+      <%= f.number_field :happiness %>
+    </div>
+
+    <div class="input">
+      <%= f.label "tickets: " %>
+      <%= f.number_field :tickets %>
+    </div>
+
+    <div class="input">
+      <%= f.label "Height: " %>
+      <%= f.number_field :height %>
+    </div>
+
+    <div class="input">
+      <%= f.label :admin, "Admin: " %>
+      <%= f.check_box :admin %>
+    </div>
+
+    <%= f.submit "Create User" %>
+
+<% end %>

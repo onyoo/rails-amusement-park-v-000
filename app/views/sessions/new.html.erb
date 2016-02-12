@@ -1,0 +1,10 @@
+<%= form_for @user, url: url_for(:controller => 'sessions', action: 'create' ) do |f| %>
+
+  <%= f.label "Select User: " %>
+  <%= f.collection_select :id, @users, :id, :name %>
+  
+<div class="submit">
+  <%= f.submit "Sign In" %>
+</div>
+
+<% end %>

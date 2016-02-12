@@ -1,0 +1,12 @@
+<% @attractions.each do |attraction| %>
+  <div class="attraction">
+    <%= render partial: 'show', locals: { attraction: attraction } %>
+
+    <div class="show_link">
+      <%= link_to show_link_message(attraction), attraction_path(attraction) %>
+    </div>
+
+  </div>
+  <br>
+<% end %>
+<%= link_to "New Attraction", new_attraction_path %>

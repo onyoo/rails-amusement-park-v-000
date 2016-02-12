@@ -23,7 +23,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-           <!--  nav here -->
+          <%= render partial: 'application/nav_links' %>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -31,6 +31,7 @@
 
     <!-- content -->
     <div class="container"  role="main">
+      <%= render partial: 'application/messages' %>
       <%= yield %>
     </div>
 
